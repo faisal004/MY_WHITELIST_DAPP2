@@ -8,7 +8,7 @@ contract Whitelist {
     constructor(uint8 _maxWhitelistedAddresses) {
         maxWhitelistedAddresses =  _maxWhitelistedAddresses;
     }
-
+//this is a comment
     function addAddressToWhitelist()  public {
         require (!whitelisteAddresses[msg.sender],"Address already registered");
         require(numAddressesWhitelisted<maxWhitelistedAddresses,"More Address Can Be Registered,Limit Reached");
